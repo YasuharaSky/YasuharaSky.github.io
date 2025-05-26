@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Zehan</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#research" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#publications" class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cv" class="nav-link">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Zehan Li</h1>
+                    <h2>Master of Arts in Computational Social Science, University of Chicago</h2>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary">View Research</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/IMG_2213.JPG" alt="Profile Photo" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi! I'm an incoming Master's student in Computational Social Science at the University of Chicago, 
+                            excited to explore how we can leverage artificial intelligence—particularly language models—to 
+                            better understand and address complex social phenomena.
+                        </p>
+                        <p>
+                            I'm particularly interested in designing AI systems that not only solve practical problems but 
+                            also highlight diverse viewpoints and biases. I believe the future of AI lies in its ability to 
+                            integrate various disciplinary perspectives, enabling us to interpret social phenomena more 
+                            accurately and communicate more effectively.
+                        </p>
+                        <p>
+                            Before joining UChicago, I earned my bachelor's degrees from UC San Diego, majoring in Applied 
+                            Mathematics and Cognitive Science (with a specialization in Machine Learning and Neural Computation) 
+                            and minoring in History.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="research">
+            <div class="container">
+                <h2 class="section-title">Research Interests</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm particularly excited about exploring <strong>domain-specific text complexity adaptation</strong>. 
+                            I'm interested in understanding how AI can better recognize and handle the unique textual variations across 
+                            different disciplines like history, literature, and social sciences. 
+                        </p>
+                        <p>
+                            I'm also drawn to the idea of using AI and language models to <strong>bridge methodological divides</strong> 
+                            between different research traditions. I believe the way scientists frame their research profoundly influences 
+                            their methods and solutions, and I'm curious about how computational tools might facilitate better communication 
+                            and understanding between natural and social sciences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="publications">
+            <div class="container">
+                <h2 class="section-title"> Publications</h2>
+                <div class="publications-content">
+                    <div class="publication-item">
+                        <h4>Beyond LLMs: A Linguistic Approach to Causal Graph Generation from Narrative Texts</h4>
+                        <p class="authors"><strong>Zehan Li</strong>, Ruhua Pan, Xinyu Pi</p>
+                        <p class="venue"><em>Proceedings of the The 7th Workshop on Narrative Understanding, NAACL
+                        </em>, 2025</p>
+                        <p class="abstract">We propose a novel framework to generate causal graphs from narrative texts, bridging high-level causality and event-specific relationships. Our approach extracts agent-centered "vertices" using LLM-based summarization, then applies linguistically grounded features through a STAC classification model. This hybrid system achieves superior precision in identifying causal links compared to LLM-only baselines, consistently outperforming GPT-4o and Claude 3.5 across key dimensions of causal graph quality.</p>
+                        <div class="publication-links">
+                            <a href="files/2025.wnu-1.10.pdf" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="view-all">
+                    <a href="#" class="btn btn-secondary">View All Publications</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="cv">
+            <div class="container">
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <div class="cv-content">
+                    <div class="cv-download">
+                        <a href="files/CV.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Full CV
+                        </a>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3>Education</h3>
+                        <div class="cv-item">
+                            <div class="cv-date">2025-present</div>
+                            <div class="cv-details">
+                                <h4>MS of Arts in Computational Social Science</h4>
+                                <p>University of Chicago</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-date">2021-2025</div>
+                            <div class="cv-details">
+                                <h4>BS in Applied Mathematics</h4>
+                                <h4>BS in Cognitive Science</h4>
+                                <p>University of California, San Diego</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h3>Teaching</h3>
+                        <div class="cv-item">
+                            <div class="cv-date">09/2024 – 12/2025</div>
+                            <div class="cv-details">
+                                <h4>Instructional Assistant</h4>
+                                <p>Supervised Machine Learning | UCSD Cognitive Science Department</p>
+                                <p>Under Prof. Zhuowen Tu</p>
+                            </div>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-date">01/2025 – 04/2025</div>
+                            <div class="cv-details">
+                                <h4>Instructional Assistant</h4>
+                                <p>Deep Learning | UCSD Cognitive Science Department</p>
+                                <p>Under Prof. Zhuowen Tu</p>
+                            </div>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-date">01/2023 – 04/2023</div>
+                            <div class="cv-details">
+                                <h4>Supplemental Instructor (SI)</h4>
+                                <p>Calculus and Analytic Geometry | UCSD Math Department</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h3>Awards & Honors</h3>
+                        <div class="cv-item">
+                            <div class="cv-date">Summer 2023</div>
+                            <div class="cv-details">
+                                <h4>Triton Research & Experiential Learning Scholars Award</h4>
+                                <p>UCSD Council of Provosts</p>
+                            </div>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-date">Spring 2024</div>
+                            <div class="cv-details">
+                                <h4>Triton Research & Experiential Learning Scholars Award</h4>
+                                <p>UCSD Council of Provosts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">Blog & Thoughts</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-date">January 2025</div>
+                        <h3>Land Distribution and Military Organization: Lessons from the An Lushan Rebellion</h3>
+                        <p>An interdisciplinary analysis exploring the intricate relationship between land distribution and military organization in classical civilizations, using the Tang Dynasty's An Lushan Rebellion as a case study...</p>
+                        <a href="writings/land-military-dynamics.html" class="read-more">Read More →</a>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-date">January 2025</div>
+                        <h3>Thinking of Communication Alignment</h3>
+                        <p>A framework for understanding information transmission and bias in human communication, exploring how to minimize loss between speaker intent and receiver understanding...</p>
+                        <a href="writings/communication-alignment.html" class="read-more">Read More →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Academic Email</h4>
+                                <p>zehan@uchicago.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Personal-Email</h4>
+                                <p>lizehan@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=K-ObNEQAAAAJ&hl=en" class="social-link" title="Google Scholar" target="_blank">
+                            <i class="ai ai-google-scholar"></i>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/zehan-li-b9b783229/" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/YasuharaSky" class="social-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Made by Zehan using Cursor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

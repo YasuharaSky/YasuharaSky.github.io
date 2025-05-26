@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking of Communication Alignment - Zehan Li</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css">
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+        
+        .article-meta {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .article-content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2.5rem 0 1rem;
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+        
+        .article-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+        
+        .article-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: var(--background-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .article-content th,
+        .article-content td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .article-content th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .article-content tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .article-content code {
+            background-color: var(--background-light);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .article-content pre {
+            background-color: var(--background-light);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        .article-content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-link:hover {
+            color: #2c5282;
+        }
+        
+        .article-footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+        
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .share-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .share-btn.twitter { background-color: #1da1f2; }
+        .share-btn.linkedin { background-color: #0077b5; }
+        .share-btn.email { background-color: var(--primary-color); }
+        
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="text-decoration: none; color: inherit;">Zehan</a></h2>
+            </div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 65px;">
+        <div class="article-container">
+            <a href="../index.html#blog" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Blog
+            </a>
+            
+            <article>
+                <header class="article-header">
+                    <h1 class="article-title">Thinking of Communication Alignment</h1>
+                    <div class="article-meta">
+                        Written by Zehan in March 2025 | Reading time: ~5 minutes
+                    </div>
+                </header>
+                
+                <div class="article-content">
+                    <h2>1. Overall Framework</h2>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Variable</th>
+                                <th>Full Term</th>
+                                <th>Abbreviation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Content Understanding</td>
+                                <td>Speaker's mental intent</td>
+                                <td>C_u</td>
+                            </tr>
+                            <tr>
+                                <td>Content Speaking</td>
+                                <td>Verbalized content</td>
+                                <td>C_S</td>
+                            </tr>
+                            <tr>
+                                <td>Receiver Listening</td>
+                                <td>Symbol sequence actually perceived</td>
+                                <td>R_L</td>
+                            </tr>
+                            <tr>
+                                <td>Receiver Understanding</td>
+                                <td>Mental construct formed by the receiver</td>
+                                <td>R_U</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>
+                        The information flows as <code>C_u → C_s → R_L → R_U</code>, generating three edges (E₁, E₂, E₃) where transmission loss or bias can appear.
+                    </p>
+                    
+                    <h2>2. Three Transmission Stages & Common Biases</h2>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Process</th>
+                                <th>Typical Loss / Bias</th>
+                                <th>Possible Mitigation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>E₁: Ideation → Expression</strong></td>
+                                <td>Speaker encodes thoughts into language</td>
+                                <td>• Limited rhetorical skill<br>• Emotions obscure true needs<br>• Highly abstract concepts hard to verbalize</td>
+                                <td>• Practice writing & reflection<br>• Metacognitive self‑inquiry<br>• "Common Reader" check: reread output vs. original intent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>E₂: Expression → Channel Transmission</strong></td>
+                                <td>Spoken/textual signal travels through a medium</td>
+                                <td>• Translation errors in L2<br>• Editing, clipping, deletions<br>• Raw data dump without structure</td>
+                                <td>• Use visuals/topology (mind‑maps, timelines)<br>• Leverage multimodal channels (audio + visual, etc.)<br>• Structure and layer the knowledge</td>
+                            </tr>
+                            <tr>
+                                <td><strong>E₃: Signal → Interpretation</strong></td>
+                                <td>Audience decodes and constructs meaning</td>
+                                <td>• Background gaps lead to incomprehension<br>• Emotional filtering distorts meaning</td>
+                                <td>• Connect to audience's prior knowledge & examples<br>• Provide multi‑context framing, guide flow state</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>3. Vectorized Perspective</h2>
+                    
+                    <p>
+                        Treat <strong>C_u, C_s, R_L, R_U</strong> as vectors in the same information space.
+                    </p>
+                    
+                    <p>
+                        Each edge can be modeled as a (possibly nonlinear) transform <strong>Bᵢ</strong>:
+                    </p>
+                    
+                    <pre><code>C_s = B₁(C_u)  
+R_L = B₂(C_s)  
+R_U = B₃(R_L)</code></pre>
+                    
+                    <p>
+                        <strong>Transmission loss / bias</strong> ≈ the difference between each Bᵢ and the identity transform; noise can be represented as εᵢ.
+                    </p>
+                    
+                    <p>
+                        <strong>Alignment goal</strong>: minimize ‖R_U − C_u‖ or drive the composite B₁·B₂·B₃ toward the identity matrix.
+                    </p>
+                    
+                    <h2>4. Higher‑Level Alignment Targets</h2>
+                    
+                    <p>
+                        <strong>1. Expressive alignment</strong> — make B₁ ≈ I (spoken equals intended).<br>
+                        <strong>2. Channel fidelity</strong> — make B₂ ≈ I (medium adds no distortion).<br>
+                        <strong>3. Interpretive alignment</strong> — make B₃ ≈ I (receiver's concept matches the original).
+                    </p>
+                    
+                    <p>
+                        When all three transforms approximate the identity, the end‑to‑end link is aligned; otherwise, each segment requires targeted correction.
+                    </p>
+                    
+                    <h2>5. Conclusion</h2>
+                    
+                    <p>
+                        Information propagation inevitably introduces bias. Decomposing the chain into <strong>variables → edges → transforms</strong> clarifies the problem space, supplies quantifiable objectives, and enables local corrective strategies. Iteratively improving B₁, B₂, and B₃ brings <strong>Content Understanding (C_u)</strong> and <strong>Receiver Understanding (R_U)</strong> closer together — the essence of <em>Communication Alignment</em>.
+                    </p>
+                </div>
+                
+                <footer class="article-footer">
+                    <p>Thank you for reading! Feel free to share your thoughts or reach out for discussion.</p>
+                    <div class="share-buttons">
+                        <a href="mailto:?subject=Thinking of Communication Alignment&body=Check out this article: [URL]" class="share-btn email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=Thinking of Communication Alignment&url=[URL]" class="share-btn twitter" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=[URL]" class="share-btn linkedin" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
