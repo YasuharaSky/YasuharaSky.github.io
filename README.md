@@ -2,7 +2,7 @@
 
 ```
 Personal_website/
-├── index.html          # Main homepage
+├── index.html          # Main  homepage
 ├── styles.css          # Stylesheet with academic styling
 ├── script.js           # JavaScript for interactions
 ├── README.md           # Documentation
