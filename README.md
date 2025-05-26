@@ -1,192 +1,194 @@
-# 个人学术网站
-
-这是一个现代化的个人学术网站模板，专为研究人员和学者设计。网站包含个人简介、研究兴趣、简历、个人写作等模块，采用响应式设计，支持在各种设备上完美显示。
-
-## 🌟 特性
-
-- **现代化设计**：采用简洁优雅的设计风格，符合学术网站的专业要求
-- **响应式布局**：完美适配桌面、平板和手机等各种设备
-- **GitHub Pages 支持**：可直接部署到 GitHub Pages，免费托管
-- **SEO 优化**：良好的搜索引擎优化，提高网站可见性
-- **交互动画**：流畅的页面动画和交互效果
-- **易于定制**：模块化设计，方便修改和扩展
-
-## 📁 文件结构
+## 📁 File Structure
 
 ```
 Personal_website/
-├── index.html          # 主页文件
-├── styles.css          # 样式文件
-├── script.js           # JavaScript 交互文件
-├── README.md           # 说明文档
-├── images/             # 图片文件夹
-│   └── profile.jpg     # 个人照片（需要您添加）
-├── files/              # 文件下载文件夹
-│   └── CV.pdf          # 简历PDF文件（需要您添加）
-└── writings/           # 个人写作文章
-    ├── article1.html   # 示例文章1
-    ├── article2.html   # 示例文章2（需要您创建）
-    └── article3.html   # 示例文章3（需要您创建）
+├── index.html          # Main homepage
+├── styles.css          # Stylesheet with academic styling
+├── script.js           # JavaScript for interactions
+├── README.md           # Documentation
+├── images/             # Image files
+│   └── placeholder.svg # Profile photo placeholder
+├── files/              # Downloadable files
+│   └── CV.pdf          # CV PDF file (to be added)
+└── writings/           # Academic blog posts
+    ├── article1.html   # Sample blog post
+    ├── article2.html   # Additional posts (to be created)
+    └── article3.html   # Additional posts (to be created)
 ```
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 1. 克隆或下载项目
+### 1. Clone or Download
 
-如果您已经在 GitHub 上创建了仓库，可以直接使用这些文件。
+If you've already created a GitHub repository, you can use these files directly.
 
-### 2. 个性化定制
+### 2. Customize Content
 
-#### 修改个人信息
+#### Update Personal Information
 
-编辑 `index.html` 文件，替换以下内容：
+Edit `index.html` and replace the following:
 
-- **姓名**：将所有 "您的姓名" 替换为您的真实姓名
-- **研究领域**：修改 "研究领域专家" 为您的具体研究领域
-- **个人简介**：更新关于我部分的个人描述
-- **研究兴趣**：修改三个研究方向的内容
-- **简历信息**：更新教育背景、工作经历、发表论文等
-- **联系信息**：更新邮箱、地址、ORCID等联系方式
+- **Name**: Replace all instances of "Your Name" with your actual name
+- **Title**: Update "PhD Candidate in Computational Social Science" to your position
+- **Bio**: Update the about section with your personal description
+- **Research Interests**: Modify the three research areas to match your work
+- **Publications**: Update the publications section with your papers
+- **CV Information**: Update education, experience, and awards
+- **Contact Info**: Update email, office address, ORCID, etc.
 
-#### 添加个人照片
+#### Add Profile Photo
 
-1. 将您的个人照片命名为 `profile.jpg`
-2. 放置在 `images/` 文件夹中
-3. 建议尺寸：300x300像素，正方形
+1. Name your profile photo `profile.jpg` or `profile.png`
+2. Place it in the `images/` folder
+3. Update the image source in `index.html`
+4. Recommended size: 300x300 pixels, square format
 
-#### 添加简历PDF
+#### Add CV PDF
 
-1. 将您的简历PDF文件命名为 `CV.pdf`
-2. 放置在 `files/` 文件夹中
+1. Name your CV file `CV.pdf`
+2. Place it in the `files/` folder
 
-#### 创建个人写作
+#### Create Blog Posts
 
-参考 `writings/article1.html` 的格式，创建更多文章：
+Follow the format of `writings/article1.html` to create additional posts:
 
-1. 在 `writings/` 文件夹中创建新的HTML文件
-2. 复制 `article1.html` 的结构
-3. 修改文章内容
-4. 在 `index.html` 中更新文章链接
+1. Create new HTML files in the `writings/` folder
+2. Copy the structure from `article1.html`
+3. Update the content with your writing
+4. Update the links in `index.html`
 
-### 3. 本地预览
+### 3. Local Preview
 
-在项目根目录下，使用任何本地服务器工具预览网站：
+To preview your website locally, use any local server:
 
 ```bash
-# 使用 Python 3
+# Using Python 3
 python -m http.server 8000
 
-# 使用 Python 2
+# Using Python 2
 python -m SimpleHTTPServer 8000
 
-# 使用 Node.js (需要安装 http-server)
+# Using Node.js (requires http-server)
 npx http-server
 
-# 使用 PHP
+# Using PHP
 php -S localhost:8000
 ```
 
-然后在浏览器中访问 `http://localhost:8000`
+Then visit `http://localhost:8000` in your browser.
 
-## 🌐 部署到 GitHub Pages
+## 🌐 Deploy to GitHub Pages
 
-### 方法一：直接部署
+### Method 1: Direct Deployment
 
-1. 在 GitHub 上创建一个新仓库，命名为 `your-username.github.io`
-2. 将所有文件上传到仓库的主分支
-3. 在仓库设置中启用 GitHub Pages
-4. 您的网站将在 `https://your-username.github.io` 上线
+1. Create a new repository on GitHub named `your-username.github.io`
+2. Upload all files to the main branch
+3. Enable GitHub Pages in repository settings
+4. Your site will be live at `https://your-username.github.io`
 
-### 方法二：使用自定义仓库名
+### Method 2: Custom Repository Name
 
-1. 创建任意名称的仓库（如 `personal-website`）
-2. 上传文件到仓库
-3. 在仓库设置中启用 GitHub Pages，选择主分支
-4. 网站将在 `https://your-username.github.io/personal-website` 上线
+1. Create a repository with any name (e.g., `academic-website`)
+2. Upload files to the repository
+3. Enable GitHub Pages in settings, select main branch
+4. Site will be available at `https://your-username.github.io/academic-website`
 
-### 方法三：使用自定义域名
+### Method 3: Custom Domain
 
-1. 购买域名
-2. 在仓库根目录创建 `CNAME` 文件，内容为您的域名
-3. 在域名提供商处设置DNS记录指向GitHub Pages
+1. Purchase a domain name
+2. Create a `CNAME` file in the repository root with your domain
+3. Configure DNS records with your domain provider to point to GitHub Pages
 
-## 🎨 自定义样式
+## 🎨 Customization
 
-### 修改颜色主题
+### Modify Color Scheme
 
-在 `styles.css` 文件的 `:root` 部分修改CSS变量：
+Edit the CSS variables in `styles.css`:
 
 ```css
 :root {
-    --primary-color: #2563eb;      /* 主色调 */
-    --secondary-color: #64748b;    /* 次要颜色 */
-    --accent-color: #f59e0b;       /* 强调色 */
-    --text-primary: #1e293b;       /* 主要文字颜色 */
-    --text-secondary: #64748b;     /* 次要文字颜色 */
-    /* ... 其他颜色变量 */
+    --primary-color: #1a365d;      /* Main color */
+    --secondary-color: #4a5568;    /* Secondary color */
+    --accent-color: #2b6cb0;       /* Accent color */
+    --text-primary: #2d3748;       /* Primary text */
+    --text-secondary: #4a5568;     /* Secondary text */
+    /* ... other color variables */
 }
 ```
 
-### 修改字体
+### Change Fonts
 
-在 `styles.css` 中修改字体设置：
+The template uses academic-appropriate fonts:
+- **Headings**: Crimson Text (serif)
+- **Body**: Source Sans Pro (sans-serif)
 
-```css
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-```
+To change fonts, update the Google Fonts link in HTML files and modify the CSS font-family declarations.
 
-## 📱 响应式设计
+## 📱 Responsive Design
 
-网站已经针对以下设备进行了优化：
+The website is optimized for:
 
-- **桌面设备**：1200px 及以上
-- **平板设备**：768px - 1199px
-- **手机设备**：767px 及以下
+- **Desktop**: 1100px and above
+- **Tablet**: 768px - 1099px
+- **Mobile**: 767px and below
 
-## 🔧 技术栈
+## 🔧 Technology Stack
 
-- **HTML5**：语义化标记
-- **CSS3**：现代CSS特性，包括Grid、Flexbox、CSS变量
-- **JavaScript (ES6+)**：现代JavaScript特性
-- **Font Awesome**：图标库
-- **Google Fonts**：Inter字体
+- **HTML5**: Semantic markup
+- **CSS3**: Modern CSS features including Grid, Flexbox, CSS variables
+- **JavaScript (ES6+)**: Modern JavaScript features
+- **Font Awesome**: Icon library
+- **Academicons**: Academic social media icons
+- **Google Fonts**: Crimson Text and Source Sans Pro
 
-## 📈 SEO 优化
+## 📈 SEO Features
 
-网站已包含基本的SEO优化：
+The website includes:
 
-- 语义化HTML结构
-- 适当的标题层级
-- Meta标签设置
-- 图片Alt属性
-- 结构化数据（可进一步添加）
+- Semantic HTML structure
+- Proper heading hierarchy
+- Meta tags
+- Alt attributes for images
+- Structured data ready (can be extended)
 
-## 🤝 贡献
+## 🤝 Academic Best Practices
 
-欢迎提交Issue和Pull Request来改进这个模板。
+### Publications Section
+- Proper citation format
+- Links to PDFs, code, and data
+- Author highlighting
+- Venue information
 
-## 📄 许可证
+### Research Interests
+- Clear, concise descriptions
+- Relevant icons
+- Academic language
 
-本项目采用 MIT 许可证。您可以自由使用、修改和分发。
+### CV Section
+- Standard academic CV format
+- Downloadable PDF option
+- Key achievements highlighted
 
-## 💡 使用建议
+## 💡 Usage Tips
 
-1. **定期更新内容**：保持网站内容的时效性
-2. **添加Google Analytics**：跟踪网站访问情况
-3. **优化图片**：压缩图片以提高加载速度
-4. **备份数据**：定期备份您的网站内容
-5. **关注安全**：如果使用自定义域名，启用HTTPS
+1. **Regular Updates**: Keep content current and relevant
+2. **Google Analytics**: Add tracking for visitor insights
+3. **Image Optimization**: Compress images for faster loading
+4. **Backup**: Regularly backup your content
+5. **HTTPS**: Use HTTPS for security (automatic with GitHub Pages)
 
-## 📞 支持
+## 📞 Support
 
-如果您在使用过程中遇到问题，可以：
+For issues or questions:
 
-1. 查看GitHub Issues
-2. 阅读相关文档
-3. 联系开发者
+1. Check the GitHub Issues
+2. Review the documentation
+3. Contact the developer
+
+## 📄 License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute.
 
 ---
 
-祝您的学术网站建设顺利！🎓 
+Good luck with your academic website! 🎓
