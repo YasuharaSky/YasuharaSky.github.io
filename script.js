@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // 观察所有需要动画的元素
-    const animatedElements = document.querySelectorAll('.research-card, .blog-card, .cv-item, .stat, .publication-item');
+    const animatedElements = document.querySelectorAll('.research-card, .blog-card, .cv-item, .stat, .publication-item, .project-card');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';

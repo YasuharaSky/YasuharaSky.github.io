@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 65px;
 }
 
+.nav-logo a {
+    text-decoration: none;
+}
+
 .nav-logo h2 {
     color: var(--primary-color);
     font-weight: 600;
@@ -167,6 +171,10 @@ main {
     margin-bottom: 1.5rem;
     font-weight: 400;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 .hero-description {
@@ -277,6 +285,60 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
+}
+
+.about-text a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+}
+
+.about-text p.about-callout {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-left: 1rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+/* News部分 */
+.news {
+    padding: 5rem 0;
+    background-color: var(--background-light);
+}
+
+.news-list {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    padding-top: 0.1rem;
+}
+
+.news-text {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.news-text strong {
+    color: var(--text-primary);
 }
 
 .stat {
@@ -412,6 +474,23 @@ main {
     font-weight: 500;
 }
 
+.pub-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.badge-oral {
+    background-color: #c05621;
+    color: white;
+}
+
 .abstract {
     color: var(--text-secondary);
     line-height: 1.6;
@@ -451,10 +530,85 @@ main {
     margin-top: 2rem;
 }
 
+/* Ongoing Projects部分 */
+.projects {
+    padding: 5rem 0;
+    background-color: var(--background-light);
+}
+
+.projects-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-group-title {
+    font-size: 1.35rem;
+    color: var(--text-secondary);
+    margin: 2.5rem 0 1.25rem;
+}
+
+.project-group-title:first-child {
+    margin-top: 0;
+}
+
+.project-card {
+    background-color: var(--background-white);
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.project-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.working-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.collaborators {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.status-tag {
+    background-color: var(--border-light);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
 /* 简历部分 */
 .cv {
     padding: 5rem 0;
-    background-color: var(--background-light);
+    background-color: var(--background-white);
 }
 
 .cv-content {
@@ -519,7 +673,7 @@ main {
 /* Blog部分 */
 .blog {
     padding: 5rem 0;
-    background-color: var(--background-white);
+    background-color: var(--background-light);
 }
 
 .blog-grid {
@@ -578,7 +732,7 @@ main {
 /* 联系方式部分 */
 .contact {
     padding: 5rem 0;
-    background-color: var(--background-light);
+    background-color: var(--background-white);
 }
 
 .contact-content {
@@ -746,7 +900,13 @@ main {
     }
     
     .research-card,
-    .blog-card {
+    .blog-card,
+    .project-card {
         padding: 1.5rem;
+    }
+
+    .news-item {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
     }
 } 
