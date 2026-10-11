@@ -293,6 +293,30 @@ main {
     border-bottom: 1px solid currentColor;
 }
 
+.rq {
+    text-align: left;
+    margin-bottom: 1.75rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--border-color);
+}
+
+.rq-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.about-text .rq p {
+    margin-bottom: 0.4rem;
+}
+
+.about-text .rq p.rq-papers {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
 .about-text p.about-callout {
     color: var(--primary-color);
     font-weight: 600;

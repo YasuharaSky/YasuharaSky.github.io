@@ -83,17 +83,39 @@
                             (Sociology and Data Science), and collaborate with
                             <a href="https://jiaxin-pei.github.io/" target="_blank">Jiaxin Pei</a> (UT Austin) and
                             <a href="https://www.xinyu-liang.com/" target="_blank">Xinyu Liang</a> (INSEAD) on
-                            AI-mediated evaluation.
+                            AI in science and society.
                         </p>
-                        <p>
-                            I study whether language models behave the way people expect a competent communicator to
-                            behave — in ambiguous, creative, and knowledge-laden contexts — and build human-grounded
-                            evaluations for the places where standard benchmarks miss what people actually care about.
-                            My work spans three threads: (1) when models should infer, defer, or ask; (2) measuring
-                            creative and narrative phenomena with LLMs; and (3) linguistically-informed analysis of model
-                            behavior. A related line of work examines LLMs as intermediaries — in how scholarly knowledge
-                            flows and in how people are evaluated.
-                        </p>
+                        <p>My research centers on three questions.</p>
+                        <div class="rq">
+                            <h4 class="rq-title">1. How do language models shape narrative, culture, and creativity?</h4>
+                            <p>Models now sit between people: they write stories, pass information along, and read work
+                            on our behalf. I want to understand how that changes what gets created, how it travels, and
+                            how it is judged.</p>
+                            <p class="rq-papers">
+                                <a href="https://arxiv.org/abs/2605.27878" target="_blank">Narrative Flattening</a> (EMNLP 2026 Oral) ·
+                                <a href="https://aclanthology.org/2025.wnu-1.10/" target="_blank">Event Causal Graph</a> (WNU @ NAACL 2025)
+                            </p>
+                        </div>
+                        <div class="rq">
+                            <h4 class="rq-title">2. What can't models do that people assume they can?</h4>
+                            <p>People increasingly hand tasks to models on the assumption that they can handle them.
+                            Often they can't, or not in the way people expect. I want to find these gaps, understand why
+                            they happen, and improve models where they fall short.</p>
+                            <p class="rq-papers">
+                                <a href="https://arxiv.org/abs/2601.13717" target="_blank">Simulated Ignorance Fails</a> (IJCAI 2026) ·
+                                <a href="https://arxiv.org/abs/2602.00758" target="_blank">Temporal Leakage</a> (ACL 2026)
+                            </p>
+                        </div>
+                        <div class="rq">
+                            <h4 class="rq-title">3. What happens when AI enters science and society?</h4>
+                            <p>AI is quickly becoming part of how science and society work. I want to understand what
+                            changes when it arrives, whether it is fit to be used there, and whether these communities
+                            are ready for it.</p>
+                            <p class="rq-papers">
+                                Ongoing: <a href="#project-attention">LLMs and Scientific Attention</a> (with Bernard Koch) ·
+                                <a href="#project-resume">AI Resume Review</a> (with Jiaxin Pei and Xinyu Liang)
+                            </p>
+                        </div>
                         <p>
                             Before UChicago, I earned B.S. degrees in Cognitive Science (Machine Learning and Neural
                             Computation) and Applied Mathematics from UC San Diego, graduating with Highest Distinction
@@ -205,7 +227,7 @@
                 <div class="projects-content">
                     <h3 class="project-group-title">LLMs as Intermediaries: How They Shape Real-World Discovery and Evaluation</h3>
 
-                    <div class="project-card">
+                    <div class="project-card" id="project-attention">
                         <h4>LLMs and the Structure of Scientific Attention <span class="working-title">(working title)</span></h4>
                         <p>How do large language models "remember" the scientific literature, and how might they reshape it as researchers increasingly rely on them to find work? We find that LLM citation memory is organized by textual co-occurrence (semantic similarity and co-citation) rather than by citation-graph topology or the social processes that generate citations. We are now comparing LLM-generated bibliographies against real human citation behavior.</p>
                         <div class="project-meta">
@@ -214,7 +236,7 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" id="project-resume">
                         <h4>AI Resume Review Instability <span class="working-title">(working title)</span></h4>
                         <p>People increasingly use AI to revise their resumes and personal narratives, while institutions increasingly use AI to screen, audit, and evaluate them. What problems arise when AI sits on both sides of the same decision, and is this a system people can broadly accept? Starting from a single resume as the unit of analysis and scaling up to realistic end-to-end workflows, we examine what part AI actually plays at each stage and where its judgments become unstable in practice.</p>
                         <div class="project-meta">
